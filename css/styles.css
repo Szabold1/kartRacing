@@ -4,8 +4,70 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: sans-serif;
-  line-height: 1;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
   font-weight: 400;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.75);
+
+  height: 100vh;
+  background: url("../img/background-1.jpg");
+  background-size: cover;
+}
+
+/* NAVIGATION BAR */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+nav {
+  display: flex;
+
+  width: fit-content;
+  background: rgba(25, 25, 25, 0.8);
+  backdrop-filter: blur(25px);
+  padding: 0.8rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.6rem 2rem rgba(30, 30, 30, 0.1);
+}
+nav a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+}
+nav a:hover {
+  color: rgba(255, 255, 255);
+  cursor: pointer;
+}
+
+/* INTRO */
+.intro-container {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  padding: 2.4rem;
+  padding-top: 7rem;
+}
+
+.intro-text {
+  max-width: 65rem;
+  padding: 2rem 4rem;
+  border-radius: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.intro-text h1 {
+  font-size: 4.8rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+.intro-text p {
+  line-height: 1.6;
 }
