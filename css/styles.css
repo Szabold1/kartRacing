@@ -14,10 +14,14 @@ body {
   font-weight: 400;
   line-height: 1;
   color: rgba(255, 255, 255, 0.75);
-
   height: 100vh;
-  background: url("../img/background-1.jpg");
+  background-image: linear-gradient(
+      rgba(25, 25, 25, 0.6),
+      rgba(25, 25, 25, 0.7)
+    ),
+    url("../img/background-1.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 /* NAVIGATION BAR */
@@ -29,22 +33,30 @@ header {
 }
 nav {
   display: flex;
+  gap: 2.6rem;
 
   width: fit-content;
-  background: rgba(25, 25, 25, 0.8);
+  background-color: rgba(25, 25, 25, 0.8);
   backdrop-filter: blur(25px);
-  padding: 0.8rem;
+  padding: 1.2rem 1.8rem;
   border-radius: 1.2rem;
-  box-shadow: 0 0.6rem 2rem rgba(30, 30, 30, 0.1);
+  box-shadow: 0 0.6rem 2rem rgba(25, 25, 25, 0.1);
 }
-nav a {
+nav a:link,
+nav a:visited {
   color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 0;
 }
-nav a:hover {
-  color: rgba(255, 255, 255);
+nav a:hover,
+nav a:active {
+  color: rgb(255, 255, 255);
   cursor: pointer;
+  border-bottom: #d30000 2px solid;
+}
+header nav .active-page {
+  color: rgb(255, 255, 255);
+  border-bottom: #d30000 2px solid;
 }
 
 /* INTRO */
@@ -54,14 +66,15 @@ nav a:hover {
 
   text-align: center;
   padding: 2.4rem;
-  padding-top: 7rem;
+  padding-top: 7.5rem;
 }
 
 .intro-text {
   max-width: 65rem;
   padding: 2rem 4rem;
   border-radius: 1.2rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(25, 25, 25, 0.5); */
+  text-shadow: 0 1rem 1rem rgba(25, 25, 25, 0.1);
 }
 .intro-text h1 {
   font-size: 4.8rem;
@@ -70,4 +83,35 @@ nav a:hover {
 }
 .intro-text p {
   line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+footer p {
+  background-color: rgba(25, 25, 25, 0.8);
+  backdrop-filter: blur(25px);
+  padding: 1rem 1.5rem;
+  line-height: 1.6;
+  box-shadow: 0 0.6rem 2rem rgba(30, 30, 30, 0.1);
+  border-radius: 0.8rem;
+}
+footer a:link,
+footer a:visited,
+footer a:active {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.75);
+}
+footer a:hover {
+  color: rgba(255, 255, 255);
 }
