@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
   padding: 0;
   margin: 0;
@@ -25,13 +26,13 @@ body {
 }
 
 /* NAVIGATION BAR */
-header {
+.header-box {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.2rem;
 }
-nav {
+.nav-links {
   display: flex;
   gap: 2.6rem;
 
@@ -42,19 +43,19 @@ nav {
   border-radius: 1.2rem;
   box-shadow: 0 0.6rem 2rem rgba(25, 25, 25, 0.1);
 }
-nav a:link,
-nav a:visited {
+.nav-link:link,
+.nav-link:visited {
   color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
   padding: 0.8rem 0;
 }
-nav a:hover,
-nav a:active {
+.nav-link:hover,
+.nav-link:active {
   color: rgb(255, 255, 255);
   cursor: pointer;
   border-bottom: #d30000 2px solid;
 }
-header nav .active-page {
+.nav-links .active-page {
   color: rgb(255, 255, 255);
   border-bottom: #d30000 2px solid;
 }
@@ -68,25 +69,24 @@ header nav .active-page {
   padding: 2.4rem;
   padding-top: 7.5rem;
 }
-
-.intro-text {
+.intro-box {
   max-width: 65rem;
   padding: 2rem 4rem;
   border-radius: 1.2rem;
   /* background-color: rgba(25, 25, 25, 0.5); */
   text-shadow: 0 1rem 1rem rgba(25, 25, 25, 0.1);
 }
-.intro-text h1 {
+.intro-header {
   font-size: 4.8rem;
   line-height: 1.1;
   margin-bottom: 2rem;
 }
-.intro-text p {
+.intro-text {
   line-height: 1.6;
 }
 
 /* FOOTER */
-footer {
+.footer-box {
   display: flex;
   justify-content: center;
 
@@ -98,7 +98,7 @@ footer {
   text-align: center;
   font-size: 1.2rem;
 }
-footer p {
+.footer-photo-copyright {
   background-color: rgba(25, 25, 25, 0.8);
   backdrop-filter: blur(25px);
   padding: 1rem 1.5rem;
@@ -106,12 +106,12 @@ footer p {
   box-shadow: 0 0.6rem 2rem rgba(30, 30, 30, 0.1);
   border-radius: 0.8rem;
 }
-footer a:link,
-footer a:visited,
-footer a:active {
+.footer-link:link,
+.footer-link:visited,
+.footer-link:active {
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.75);
 }
-footer a:hover {
+.footer-link:hover {
   color: rgba(255, 255, 255);
 }
