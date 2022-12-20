@@ -15,6 +15,14 @@ body {
   font-weight: 400;
   line-height: 1;
   color: rgba(255, 255, 255, 0.75);
+}
+
+/* HOME PAGE */
+.home-page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 6vh;
+
   height: 100vh;
   background-image: linear-gradient(
       rgba(25, 25, 25, 0.6),
@@ -61,13 +69,12 @@ body {
 }
 
 /* INTRO */
-.intro-container {
+.main-box {
   display: flex;
   justify-content: center;
 
   text-align: center;
   padding: 2.4rem;
-  padding-top: 7.5rem;
 }
 .intro-box {
   max-width: 65rem;
@@ -79,7 +86,7 @@ body {
 .intro-header {
   font-size: 4.8rem;
   line-height: 1.1;
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
 }
 .intro-text {
   line-height: 1.6;
@@ -90,10 +97,6 @@ body {
   display: flex;
   justify-content: center;
 
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 0.5rem;
   text-align: center;
   font-size: 1.2rem;
