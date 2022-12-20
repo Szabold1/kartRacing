@@ -14,7 +14,6 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.75);
 }
 
 /* HOME PAGE */
@@ -53,18 +52,20 @@ body {
 }
 .nav-link:link,
 .nav-link:visited {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgb(240, 240, 240, 0.75);
   text-decoration: none;
   padding: 0.8rem 0;
+
+  transition: color 0.3s;
 }
 .nav-link:hover,
 .nav-link:active {
-  color: rgb(255, 255, 255);
+  color: rgb(240, 240, 240);
   cursor: pointer;
   border-bottom: #d30000 2px solid;
 }
 .nav-links .active-page {
-  color: rgb(255, 255, 255);
+  color: rgb(240, 240, 240);
   border-bottom: #d30000 2px solid;
 }
 
@@ -73,6 +74,7 @@ body {
   display: flex;
   justify-content: center;
 
+  color: rgba(240, 240, 240, 0.8);
   text-align: center;
   padding: 2.4rem;
 }
@@ -80,15 +82,17 @@ body {
   max-width: 65rem;
   padding: 2rem 4rem;
   border-radius: 1.2rem;
-  /* background-color: rgba(25, 25, 25, 0.5); */
   text-shadow: 0 1rem 1rem rgba(25, 25, 25, 0.1);
 }
 .intro-header {
-  font-size: 4.8rem;
+  font-size: 5.2rem;
+  font-weight: 700;
   line-height: 1.1;
+  letter-spacing: -0.5px;
   margin-bottom: 2.4rem;
 }
 .intro-text {
+  font-size: 2rem;
   line-height: 1.6;
 }
 
@@ -103,6 +107,7 @@ body {
 }
 .footer-photo-copyright {
   background-color: rgba(25, 25, 25, 0.8);
+  color: rgb(240, 240, 240, 0.7);
   backdrop-filter: blur(25px);
   padding: 1rem 1.5rem;
   line-height: 1.6;
@@ -113,8 +118,8 @@ body {
 .footer-link:visited,
 .footer-link:active {
   text-decoration: underline;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgb(240, 240, 240, 0.75);
 }
 .footer-link:hover {
-  color: rgba(255, 255, 255);
+  color: rgb(240, 240, 240);
 }
