@@ -16,15 +16,15 @@ body {
   line-height: 1;
 }
 
-/* HOME PAGE */
-.home-page {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  row-gap: 6vh;
-
+/* HERO */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
+  min-height: 56rem;
   background-image: linear-gradient(
-      rgba(25, 25, 25, 0.6),
+      rgba(25, 25, 25, 0.7),
       rgba(25, 25, 25, 0.7)
     ),
     url("../img/background-1.jpg");
@@ -39,6 +39,7 @@ body {
   justify-content: center;
   padding: 1.2rem;
 }
+
 .nav-links {
   display: flex;
   gap: 2.6rem;
@@ -50,40 +51,40 @@ body {
   border-radius: 1.2rem;
   box-shadow: 0 0.6rem 2rem rgba(25, 25, 25, 0.1);
 }
+
 .nav-link:link,
 .nav-link:visited {
   color: rgb(240, 240, 240, 0.75);
   text-decoration: none;
   padding: 0.8rem 0;
-
   transition: color 0.3s;
 }
+
 .nav-link:hover,
 .nav-link:active {
   color: rgb(240, 240, 240);
   cursor: pointer;
   border-bottom: #d30000 2px solid;
 }
+
 .nav-links .active-page {
   color: rgb(240, 240, 240);
   border-bottom: #d30000 2px solid;
 }
 
 /* INTRO */
-.main-box {
-  display: flex;
-  justify-content: center;
-
+.intro-box {
+  margin: 0 auto;
   color: rgba(240, 240, 240, 0.8);
   text-align: center;
-  padding: 2.4rem;
-}
-.intro-box {
+  height: 100%;
+  margin-top: 8vh;
   max-width: 65rem;
   padding: 2rem 4rem;
   border-radius: 1.2rem;
   text-shadow: 0 1rem 1rem rgba(25, 25, 25, 0.1);
 }
+
 .intro-header {
   font-size: 5.2rem;
   font-weight: 700;
@@ -91,35 +92,31 @@ body {
   letter-spacing: -0.5px;
   margin-bottom: 2.4rem;
 }
+
 .intro-text {
   font-size: 2rem;
   line-height: 1.6;
 }
 
-/* FOOTER */
-.footer-box {
-  display: flex;
-  justify-content: center;
-
-  padding: 0.5rem;
+/* PHOTO COPYRIGHT */
+.photo-copyright-text {
+  color: rgb(240, 240, 240, 0.5);
+  padding: 1rem;
+  margin: 0 auto;
+  font-size: 1.2rem;
   text-align: center;
   font-size: 1.2rem;
 }
-.footer-photo-copyright {
-  background-color: rgba(25, 25, 25, 0.8);
-  color: rgb(240, 240, 240, 0.7);
-  backdrop-filter: blur(25px);
-  padding: 1rem 1.5rem;
-  line-height: 1.6;
-  box-shadow: 0 0.6rem 2rem rgba(30, 30, 30, 0.1);
-  border-radius: 0.8rem;
-}
-.footer-link:link,
-.footer-link:visited,
-.footer-link:active {
+
+.photo-copyright-link:link,
+.photo-copyright-link:visited,
+.photo-copyright-link:active {
   text-decoration: underline;
-  color: rgb(240, 240, 240, 0.75);
+  color: rgb(240, 240, 240, 0.5);
 }
-.footer-link:hover {
+
+.photo-copyright-link:hover {
   color: rgb(240, 240, 240);
+  text-decoration: none;
+  cursor: pointer;
 }
