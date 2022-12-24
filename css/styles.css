@@ -74,12 +74,14 @@ body {
   cursor: pointer;
   text-decoration: underline #d30000 2px;
   text-underline-offset: 10px;
+  -webkit-text-decoration: underline #d30000;
 }
 
 .nav-link.active-page {
   color: rgb(240, 240, 240);
   text-decoration: underline #d30000 2px;
   text-underline-offset: 10px;
+  -webkit-text-decoration: underline #d30000;
 }
 
 /* INTRO */
@@ -170,6 +172,7 @@ body {
   color: rgb(240, 240, 240);
   text-decoration: underline #d30000 2px;
   text-underline-offset: 10px;
+  -webkit-text-decoration: underline #d30000;
 }
 
 .card-title {
@@ -223,6 +226,7 @@ body {
   cursor: pointer;
   text-decoration: underline #d30000 2px;
   text-underline-offset: 10px;
+  -webkit-text-decoration: underline #d30000;
 }
 
 .more-info-icon {
