@@ -25,6 +25,7 @@
     ></script>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -32,8 +33,7 @@
       <header class="header-box">
         <nav class="nav-links">
           <a href="#" class="nav-link home active-page">Home</a>
-          <a href="#" class="nav-link categories">Categories</a>
-          <a href="#" class="nav-link championships">Championships</a>
+          <a href="#" class="nav-link categories">Categories & Championships</a>
           <a href="#" class="nav-link results-calendar">Results & Calendar</a>
           <a href="#" class="nav-link circuits">Circuits</a>
           <a href="#" class="nav-link drivers">Drivers</a>
@@ -70,13 +70,14 @@
       </p>
     </div>
 
-    <section class="container">
-      <h3 class="section-title">Categories</h3>
+    <!-- CATEGORIES SECTION -->
+    <section class="container categories-section">
+      <h3 class="section-title">Categories & Championships</h3>
 
-      <div class="categories-cards">
+      <div class="cards-box">
         <!-- CARD 1 -->
-        <figure class="categories-card">
-          <p class="photo-copyright-text cards-copyright-text">
+        <figure class="card-element">
+          <p class="photo-copyright-text card-copyright-text">
             Photo © 2022
             <a
               href="https://www.fiakarting.com/page/home"
@@ -97,16 +98,16 @@
             <img
               src="img/categories-fia-img-1.jpg"
               alt="Kart racing driver driving in rain"
-              class="categories-card-img"
+              class="card-img"
             />
 
-            <figcaption class="card-title">FIA</figcaption>
+            <figcaption class="card-title">OK & KZ</figcaption>
           </a>
         </figure>
 
         <!-- CARD 2 -->
-        <figure class="categories-card">
-          <p class="photo-copyright-text cards-copyright-text">
+        <figure class="card-element">
+          <p class="photo-copyright-text card-copyright-text">
             Photo © 2018
             <a
               href="https://grandfinals.rotax-kart.com/rmcgf-2018-brazil"
@@ -120,7 +121,7 @@
             <img
               src="img/categories-rotax-img-1.jpg"
               alt="Kart race winner crossing the finish line"
-              class="categories-card-img"
+              class="card-img"
             />
 
             <figcaption class="card-title">Rotax</figcaption>
@@ -128,8 +129,8 @@
         </figure>
 
         <!-- CARD 3 -->
-        <figure class="categories-card">
-          <p class="photo-copyright-text cards-copyright-text">
+        <figure class="card-element">
+          <p class="photo-copyright-text card-copyright-text">
             Photo © 2019
             <a
               href="https://www.iamekarting.com/dt_gallery/iame-international-final-2019/"
@@ -143,17 +144,40 @@
             <img
               src="img/categories-x30-img-1.jpg"
               alt="Kart racing driver drives kart"
-              class="categories-card-img"
+              class="card-img"
             />
 
             <figcaption class="card-title">Iame X30</figcaption>
           </a>
         </figure>
+
+        <!-- CARD 4 -->
+        <figure class="card-element">
+          <p class="photo-copyright-text card-copyright-text">
+            Photo © 2022
+            <a
+              href="https://www.ph24.it/en/"
+              target="_blank"
+              class="photo-copyright-link"
+              >Printh24</a
+            >
+          </p>
+
+          <a href="#" class="categories-card-link">
+            <img
+              src="img/categories-rok-img-1.jpg"
+              alt="Kart racing driver drives kart in rain"
+              class="card-img"
+            />
+
+            <figcaption class="card-title">Vortex Rok</figcaption>
+          </a>
+        </figure>
       </div>
 
-      <div class="more-info">
+      <div class="more-info-box">
         <a href="#" class="more-info-link">
-          <span> More about categories</span
+          <span> More about categories & championships</span
           ><ion-icon
             name="chevron-forward-outline"
             class="more-info-icon"
