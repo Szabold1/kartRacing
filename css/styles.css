@@ -25,7 +25,9 @@
 .nav-links {
   display: flex;
   gap: 2.6rem;
-
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: fit-content;
   background-color: rgba(25, 25, 25, 0.8);
   backdrop-filter: blur(25px);
