@@ -12,28 +12,23 @@
     url("../img/background-1.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 /* NAVIGATION BAR */
-.header-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.2rem;
-}
-
 .nav-links {
   display: flex;
-  gap: 2.6rem;
+  gap: 4.8rem;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  width: fit-content;
   background-color: rgba(25, 25, 25, 0.8);
-  backdrop-filter: blur(25px);
-  padding: 1.2rem 1.8rem;
-  border-radius: 1.2rem;
+  backdrop-filter: blur(15px);
+  padding: 2.4rem;
   box-shadow: 0 0.6rem 2rem rgba(25, 25, 25, 0.1);
+  list-style: none;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
 }
 
 .nav-link:link,
@@ -63,9 +58,8 @@
   color: rgba(240, 240, 240, 0.8);
   text-align: center;
   height: 100%;
-  margin-top: 8vh;
-  max-width: 65rem;
-  padding: 2rem 4rem;
+  max-width: 72rem;
+  padding: 17.6rem 4rem 2rem;
 }
 
 .intro-header {
