@@ -48,9 +48,6 @@
 .nav-link:active {
   color: rgb(240, 240, 240);
   cursor: pointer;
-  text-decoration: underline #d30000 2px;
-  text-underline-offset: 10px;
-  -webkit-text-decoration: underline #d30000;
 }
 
 .nav-link.active-page {
