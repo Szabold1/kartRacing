@@ -6,7 +6,7 @@
   height: 100vh;
   min-height: 56rem;
   background-image: linear-gradient(
-      rgba(25, 25, 25, 0.7),
+      rgba(25, 25, 25, 0.8),
       rgba(25, 25, 25, 0.7)
     ),
     url("../img/background-1.jpg");
@@ -21,14 +21,19 @@
   gap: 4.8rem;
   justify-content: center;
   align-items: center;
-  background-color: rgba(25, 25, 25, 0.8);
+  background-image: linear-gradient(
+    rgba(25, 25, 25, 0.55),
+    rgba(25, 25, 25, 0.35),
+    rgba(25, 25, 25, 0.003)
+  );
+  /* background-color: rgba(25, 25, 25, 0.3);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   padding: 2.4rem;
-  box-shadow: 0 0.6rem 2rem rgba(25, 25, 25, 0.1);
+  box-shadow: 0 0.6rem 2rem rgba(25, 25, 25, 0.1); */
   list-style: none;
   width: 100%;
-  position: fixed;
+  height: 7.2rem;
   z-index: 3;
 }
 
@@ -36,8 +41,8 @@
 .nav-link:visited {
   color: rgb(240, 240, 240, 0.75);
   text-decoration: none;
-  padding: 0.8rem 0;
-  transition: color 0.3s;
+  padding: 1.2rem 0;
+  transition: all 0.3s;
 }
 
 .nav-link:hover,
@@ -48,9 +53,26 @@
 
 .nav-link.active-page {
   color: rgb(240, 240, 240);
-  text-decoration: underline #d30000 2px;
-  text-underline-offset: 10px;
-  -webkit-text-decoration: underline #d30000;
+}
+
+.sticky .nav-links {
+  position: fixed;
+  background-image: none;
+  background-color: rgb(240, 240, 240, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 0.6rem 2rem rgba(25, 25, 25, 0.1);
+}
+
+.sticky .nav-link:link,
+.sticky .nav-link:visited {
+  color: rgba(25, 25, 25);
+}
+
+.sticky .nav-link:hover,
+.sticky .nav-link:active,
+.sticky .nav-link.active-page {
+  color: #d30000;
 }
 
 /* INTRO */
@@ -60,7 +82,7 @@
   text-align: center;
   height: 100%;
   max-width: 72rem;
-  padding: 17.6rem 4rem 2rem;
+  padding: 11.2rem 4rem 2rem;
 }
 
 .intro-header {
