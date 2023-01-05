@@ -51,10 +51,6 @@
   cursor: pointer;
 }
 
-.nav-link.active-page {
-  color: rgb(240, 240, 240);
-}
-
 .sticky .nav-links {
   position: fixed;
   background-image: none;
@@ -70,8 +66,7 @@
 }
 
 .sticky .nav-link:hover,
-.sticky .nav-link:active,
-.sticky .nav-link.active-page {
+.sticky .nav-link:active {
   color: #d30000;
 }
 

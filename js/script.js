@@ -20,3 +20,24 @@ const obs = new IntersectionObserver(
 );
 
 obs.observe(heroContainerEl);
+
+/////////////////////////////////////////
+// Scrolling to sections
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      const y = sectionEl.getBoundingClientRect().y + window.scrollY - 110;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
+    }
+  });
+});
