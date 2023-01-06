@@ -3,7 +3,7 @@
 const heroContainerEl = document.querySelector(".hero-container");
 
 const obs = new IntersectionObserver(
-  function (entries) {
+  (entries) => {
     const ent = entries[0];
 
     if (!ent.isIntersecting) {
@@ -25,8 +25,8 @@ obs.observe(heroContainerEl);
 // Scrolling to sections
 const allLinks = document.querySelectorAll("a:link");
 
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
+allLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
     e.preventDefault();
     const href = link.getAttribute("href");
 
@@ -39,5 +39,25 @@ allLinks.forEach(function (link) {
         behavior: "smooth",
       });
     }
+  });
+});
+
+/////////////////////////////////////////
+// Results slider
+const cardsBoxEl = document.querySelectorAll(".cards-box");
+const preBtnEl = document.querySelector(".btn-pre");
+const nxtBtnEl = document.querySelector(".btn-nxt");
+
+cardsBoxEl.forEach((item) => {
+  let boxDimensions = item.getBoundingClientRect();
+  let boxWidth = boxDimensions.width;
+
+  console.log("boxwidth", boxWidth);
+  preBtnEl.addEventListener("click", () => {
+    item.scrollLeft -= boxWidth;
+  });
+
+  nxtBtnEl.addEventListener("click", () => {
+    item.scrollLeft += boxWidth;
   });
 });
