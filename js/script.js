@@ -52,7 +52,6 @@ cardsBoxEl.forEach((item) => {
   let boxDimensions = item.getBoundingClientRect();
   let boxWidth = boxDimensions.width;
 
-  console.log("boxwidth", boxWidth);
   preBtnEl.addEventListener("click", () => {
     item.scrollLeft -= boxWidth;
   });
