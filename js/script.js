@@ -49,8 +49,7 @@ const preBtnEl = document.querySelector(".btn-pre");
 const nxtBtnEl = document.querySelector(".btn-nxt");
 
 cardsBoxEl.forEach((item) => {
-  let boxDimensions = item.getBoundingClientRect();
-  let boxWidth = boxDimensions.width;
+  let boxWidth = 356;
 
   preBtnEl.addEventListener("click", () => {
     item.scrollLeft -= boxWidth;
