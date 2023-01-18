@@ -60,3 +60,7 @@ cardsBoxEl.forEach((item) => {
     item.scrollLeft += boxWidth;
   });
 });
+
+/////////////////////////////////////////
+// Footer copyright
+document.querySelector(".current-year").innerHTML = new Date().getFullYear();
