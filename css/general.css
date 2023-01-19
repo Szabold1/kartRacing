@@ -56,11 +56,34 @@ body {
   z-index: 1;
 }
 
+.title-container {
+  margin-top: 7.2rem;
+}
+
+.title-container a:link,
+.title-container a:visited {
+  color: rgb(25, 25, 25);
+  text-decoration: none;
+}
+
 .section-title {
-  margin-top: 6.4rem;
   font-size: 4rem;
   font-weight: 600;
   text-shadow: 0 2.4rem 4.8rem rgba(25, 25, 25, 0.1);
+  margin-right: 0.8rem;
+}
+
+.view-all {
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.view-all:hover,
+.view-all:active {
+  color: #d30000;
+  cursor: pointer;
 }
 
 /* CARDS */
@@ -69,7 +92,8 @@ body {
   gap: 3.2rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 5.2rem;
+  margin-top: 4.8rem;
+  padding-bottom: 2.4rem;
 }
 
 .card-element {
