@@ -31,7 +31,7 @@ body {
 
 .photo-copyright-link:link,
 .photo-copyright-link:visited {
-  text-decoration: underline;
+  text-decoration: none;
   color: rgb(240, 240, 240, 0.5);
 }
 
