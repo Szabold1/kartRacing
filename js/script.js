@@ -48,15 +48,16 @@ const cardsBoxEl = document.querySelectorAll(".cards-box");
 const preBtnEl = document.querySelector(".btn-pre");
 const nxtBtnEl = document.querySelector(".btn-nxt");
 
-cardsBoxEl.forEach((item) => {
-  let boxWidth = 356;
+const cardWidth = document.querySelector(".results-category-box").offsetWidth;
+let toScroll = cardWidth + 36;
 
+cardsBoxEl.forEach((item) => {
   preBtnEl.addEventListener("click", () => {
-    item.scrollLeft -= boxWidth;
+    item.scrollLeft -= toScroll;
   });
 
   nxtBtnEl.addEventListener("click", () => {
-    item.scrollLeft += boxWidth;
+    item.scrollLeft += toScroll;
   });
 });
 
