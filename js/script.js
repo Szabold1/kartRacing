@@ -44,19 +44,21 @@ allLinks.forEach((link) => {
 
 /////////////////////////////////////////
 // Results slider
-const cardsBoxEl = document.querySelectorAll(".cards-box");
+const resultsCardsBox = document.querySelectorAll(
+  ".results-section .cards-box"
+);
 const preBtnEl = document.querySelector(".btn-pre");
 const nxtBtnEl = document.querySelector(".btn-nxt");
 
 const cardWidth = document.querySelector(".results-category-box").offsetWidth;
 let toScroll = cardWidth + 36;
 
-cardsBoxEl.forEach((item) => {
+resultsCardsBox.forEach((item) => {
   preBtnEl.addEventListener("click", () => {
     item.scrollLeft -= toScroll;
   });
 
-  nxtBtnEl.addEventListener("click", () => {
+  nxtBtnEl.addEventListener("click", (e) => {
     item.scrollLeft += toScroll;
   });
 });
