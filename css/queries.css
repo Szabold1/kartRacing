@@ -1,0 +1,141 @@
+/* below 1360px */
+@media (max-width: 85em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .results-container {
+    gap: 2.4rem;
+  }
+}
+
+/* below 1216px */
+@media (max-width: 76em) {
+  .results-section .cards-box {
+    width: auto;
+    padding: 0 4.8rem 2.4rem;
+  }
+
+  .results-container {
+    margin: 0;
+  }
+
+  .btn-pre,
+  .btn-nxt {
+    display: none;
+  }
+
+  .cards-box {
+    grid-template-columns: repeat(minmax(20rem, 1fr));
+    grid-auto-columns: minmax(20rem, 1fr);
+  }
+
+  .section-title {
+    font-size: 3.7rem;
+  }
+
+  .view-all {
+    font-size: 1.7rem;
+  }
+}
+
+/* below 944px */
+@media (max-width: 59em) {
+  .nav-mobile {
+    display: block;
+  }
+
+  .nav-links,
+  .sticky .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.4s;
+    background-color: rgb(25, 25, 25, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .sticky .nav-links {
+    margin-top: 72px;
+    position: fixed;
+    background-color: rgb(240, 240, 240, 0.75);
+  }
+
+  .clicked-menu .nav-links {
+    height: 52rem;
+  }
+
+  .clicked-menu.sticky .nav-links {
+    height: 52rem;
+  }
+}
+
+/* below 800px */
+@media (max-width: 50em) {
+  .title-container {
+    margin-left: 3.6rem;
+  }
+
+  .cards-box,
+  .results-section .cards-box {
+    padding-left: 3.6rem;
+  }
+}
+
+/* below 672px */
+@media (max-width: 42em) {
+  html {
+    font-size: 53%;
+  }
+}
+
+/* below 544px */
+@media (max-width: 34em) {
+  .intro-header {
+    font-size: 4rem;
+  }
+
+  .section-title {
+    font-size: 3.4rem;
+  }
+
+  .title-container {
+    margin-left: 3rem;
+    margin-top: 4rem;
+  }
+
+  .footer {
+    margin-top: 4rem;
+  }
+
+  .cards-box,
+  .results-section .cards-box {
+    padding-left: 3rem;
+    margin-top: 3rem;
+  }
+
+  .results-section .cards-box {
+    grid-auto-columns: minmax(30rem, 1fr);
+  }
+
+  .results-category-box-text {
+    padding: 1.6rem 2.8rem 2.2rem;
+  }
+}
+
+/* below 432px */
+@media (max-width: 27em) {
+  .title-container {
+    margin-left: 2.4rem;
+  }
+
+  .cards-box,
+  .results-section .cards-box {
+    padding-left: 2.4rem;
+  }
+}

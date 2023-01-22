@@ -21,6 +21,14 @@ const obs = new IntersectionObserver(
 
 obs.observe(heroContainerEl);
 
+//////////////////////////////////////////////
+// Mobile navigation
+const btnMenu = document.querySelector(".nav-icon");
+
+btnMenu.addEventListener("click", () => {
+  document.body.classList.toggle("clicked-menu");
+});
+
 /////////////////////////////////////////
 // Scrolling to sections
 const allLinks = document.querySelectorAll("a:link");
@@ -38,6 +46,8 @@ allLinks.forEach((link) => {
         top: y,
         behavior: "smooth",
       });
+
+      document.body.classList.remove("clicked-menu");
     }
   });
 });
