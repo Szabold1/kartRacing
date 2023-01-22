@@ -51,13 +51,14 @@
     justify-content: center;
     align-items: center;
     background-image: none;
-    height: 0;
+    height: 1px;
     overflow: hidden;
     position: absolute;
     transition: all 0.4s;
     background-color: rgb(25, 25, 25, 0.4);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    opacity: 0;
   }
 
   .sticky .nav-links {
@@ -68,10 +69,7 @@
 
   .clicked-menu .nav-links {
     height: 52rem;
-  }
-
-  .clicked-menu.sticky .nav-links {
-    height: 52rem;
+    opacity: 1;
   }
 }
 
