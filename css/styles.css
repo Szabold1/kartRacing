@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  min-height: 56rem;
   background-image: linear-gradient(
       rgba(25, 25, 25, 0.8),
       rgba(25, 25, 25, 0.7)
@@ -12,8 +11,7 @@
     url("../img/background-1920.webp");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  background-repeat: repeat-y;
+  width: 100%;
 }
 
 /* NAVIGATION BAR */
@@ -115,7 +113,7 @@
   text-align: center;
   height: 100%;
   max-width: 72rem;
-  padding: 16vh 4rem 2rem;
+  padding: 14vh 4rem 2rem;
 }
 
 .intro-header {
