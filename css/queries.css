@@ -117,7 +117,7 @@
   }
 
   .intro-text {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 
@@ -167,6 +167,6 @@
         rgba(25, 25, 25, 0.8),
         rgba(25, 25, 25, 0.7)
       ),
-      url("../img/background-mobile-1000.webp");
+      url("../img/background-1000m.webp");
   }
 }
