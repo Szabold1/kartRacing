@@ -11,7 +11,7 @@
     url("../img/background-1920.webp");
   background-size: cover;
   background-position: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* NAVIGATION BAR */

@@ -150,16 +150,27 @@
     margin-top: 4rem;
   }
 
+  .categories-section .cards-box {
+    gap: 1.2rem;
+  }
+
   .cards-box {
     margin-top: 3rem;
+    grid-auto-columns: minmax(18rem, 20rem);
+    gap: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
   }
 
   .results-section .cards-box {
     grid-auto-columns: 30rem;
+    gap: 2.2rem;
   }
 
   .results-category-box-text {
-    padding: 1.6rem 2.8rem 2.2rem;
+    padding: 1.4rem 2.4rem 2rem;
   }
 
   .hero-container {
