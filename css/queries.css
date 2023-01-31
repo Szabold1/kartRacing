@@ -56,6 +56,11 @@
     margin: 0;
   }
 
+  .results-category-box {
+    scroll-snap-align: start;
+    scroll-margin-left: 4vw;
+  }
+
   .btn-pre,
   .btn-nxt {
     display: none;
