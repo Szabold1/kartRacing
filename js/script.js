@@ -30,29 +30,6 @@ btnMenu.addEventListener("click", () => {
 });
 
 /////////////////////////////////////////
-// Scrolling to sections
-const allLinks = document.querySelectorAll("a:link");
-
-allLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const href = link.getAttribute("href");
-
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      const y = sectionEl.getBoundingClientRect().y + window.scrollY - 110;
-
-      window.scrollTo({
-        top: y,
-        behavior: "smooth",
-      });
-
-      document.body.classList.remove("clicked-menu");
-    }
-  });
-});
-
-/////////////////////////////////////////
 // Results slider
 const resultsCardsBox = document.querySelectorAll(
   ".results-section .cards-box"
